@@ -1,0 +1,109 @@
+@import "reset.css";
+
+:root {
+    --darkColor: #515151;
+    --lightColor: #fff;
+    --lightBlueColor:#94d5f8;
+    --darkBlueColor:#3498DB;
+    --blackColor:#000000;
+  }
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+}
+.container{
+    background-color: var(--lightBlueColor);
+    width: 40rem;
+    height: 60rem;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5rem;
+
+}
+label{
+    font-size: 1.5rem;
+}
+#fullName,#emailAddress, #date{
+    width: 100%;
+    height: 5rem;
+    border-radius: 5rem;
+    border:none;
+    margin: 1rem 0;
+    padding: 0 .9rem;
+    outline: none;
+}
+
+#gender{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    margin: .3rem 0;
+    
+}
+.Gender-female{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--lightColor);
+    margin: 0 2rem;
+    border-radius: 5rem;
+    text-align: center;
+    vertical-align: middle;
+}
+.Gender-male{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--lightColor);
+    border-radius: 5rem;
+}
+
+.Gender-female label{
+    opacity: .5;
+    justify-content: center!important;
+    align-items: center!important;
+    text-align: center;
+}
+.Gender-male label{
+    opacity: .5;
+}
+
+#checkbox{
+    align-items: flex-start;
+    border-color: var(--lightBlueColor);
+
+
+    
+}
+.conditions{
+    flex-direction: row;
+    margin: 3rem 0;
+    justify-content: center;
+}
+.conditions label{
+    margin: 0 1.5rem;
+}
+
+button{
+    width: 100%;
+    height: 5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--darkBlueColor);
+    color: var(--lightColor);
+    margin: 1rem 0;
+    padding: 0 .9rem;
+    cursor: pointer;
+
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
